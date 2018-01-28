@@ -18,7 +18,7 @@ public class Main extends Application {
     //There should be a button at the bottom of the application in the final view that resets the application.
 
 
-    @Override
+
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello");

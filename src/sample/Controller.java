@@ -1,6 +1,7 @@
 package sample;
 
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
@@ -28,5 +29,13 @@ public class Controller {
 
     Scanner sc = new Scanner(System.in);
 
+  public void clickedTheButton(ActionEvent actionEvent) {
+      String userEntry=userInput.getText();
+      int userInput=Integer.parseInt(userEntry);
 
-}
+      if (answer==response){
+          responseText.setText("      Confirmed");
+
+      }
+  }
+
